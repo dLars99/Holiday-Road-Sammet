@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Holiday Road</title>
+</head>
+<body>
+    <main class = "container">
+        <div class = "banner"></div>
+
+        <article id = "leftContainer">
+
+            <form id = "dropdown">
+                <!-- Can be done this way but may need to change it  -->
+                <select class = "dropdown__list"></select>
+                <select class = "dropdown__list"></select>
+                <select class = "dropdown__list"></select>
+            </form>
+
+            <article class = "itineraryPreview">
+                <section class = "weather">       
+                    <div class = weather__list></div>
+                </section>
+
+                <section class="park">
+                    <button class = "park__button">Details Parks</button>
+                </section>
+
+                <section class = "bizzarrarie">
+                    <buttton>Detail Bizzarrarie</buttton>
+                </section>
+
+                <section class = "eatery">
+                    <button>Detail Eateries</button>
+                </section>
+
+                <button id = "dropdown"></button>
+            </article>
+
+        </article>
+        <aside class = "rightContainer">
+            <!-- The rest of the HTML will come through our data -->
+            <article class = "itineraryList"></article>
+        </aside>
+        
+    </main>
+</body>
+</html>

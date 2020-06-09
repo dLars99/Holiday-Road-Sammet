@@ -1,5 +1,5 @@
 const weatherURL = `api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid=${apiKeys.weatherKey}`
-let weatherFive = {}
+let fiveDayForcast = {}
 
 
 const getWeatherData = () => {
@@ -8,9 +8,9 @@ const getWeatherData = () => {
             return httpResponse.json()
         }
     ).then (
-        (fiveDayForcast) => {
-            weatherFive = fiveDayForcast
-            console.log(weatherFive)
+        (arryOfWeather) => {
+            fiveDayForcast = arrayOfWeather
+            console.log(fiveDayForcast)
         }
     )
 }

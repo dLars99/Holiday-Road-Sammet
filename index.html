@@ -14,14 +14,14 @@
 
             <form id = "dropdown">
                 <!-- Can be done this way but may need to change it  -->
-                <select class = "dropdown__list"></select>
-                <select class = "dropdown__list"></select>
-                <select class = "dropdown__list"></select>
+                <select class = "dropdown__list parkList"></select>
+                <select class = "dropdown__list attractionList"></select>
+                <select class = "dropdown__list eateryList"></select>
             </form>
 
             <article class = "itineraryPreview">
-                <section class = "weather">       
-                    <!--Fills in Weather list-->>
+                <section class = "weatherList">       
+                    <!--Fills in Weather list-->
                 </section>
 
                 <section class="park">
@@ -29,9 +29,9 @@
                     <button class = "park__button">Details Parks</button>
                 </section>
 
-                <section class = "bizzarrarie">
+                <section class = "attraction">
                     <!-- Fills in with Bizzarrarie name -->
-                    <buttton>Detail Bizzarrarie</buttton>
+                    <button>Detail Bizzarrarie</button>
                 </section>
 
                 <section class = "eatery">
@@ -39,7 +39,7 @@
                     <button>Detail Eateries</button>
                 </section>
 
-                <button id = "dropdown"></button>
+                <button id = "dropdown">Save</button>
             </article>
 
         </article>
@@ -47,6 +47,7 @@
             <!-- The rest of the HTML will come through our data -->
             <article class = "itineraryList"></article>
         </aside>
+
     <script type="module" src="scripts/attractions/AttractionProvider.js"></script>
     <script type="module" src="scripts/directions/DirectionProvider.js"></script>
     <script type="module" src="scripts/eateries/EateryProvider.js"></script>

@@ -8,7 +8,6 @@ const getEateryData = () => {
     ) .then(
         (arrayOfEatery) => {
             eateryCollection = arrayOfEatery
-            console.log(eateryCollection)
         }
     )
 }

@@ -1,0 +1,3 @@
+const addParkToItinerary = (selectionID) {
+    
+}

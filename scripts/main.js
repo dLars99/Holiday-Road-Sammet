@@ -1,6 +1,8 @@
 import apiKeys from "./Settings.js";
 
-API.getAttractionList()
+getAttractionList()
 .then(() => renderAttractionList())
+
+
 getParkData(apiKeys.npsKey)
     .then(parksData => generateParksList(parksData))

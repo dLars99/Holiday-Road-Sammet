@@ -1,19 +1,25 @@
-
-// const API = {
-//     getAttractionList () {
-//         return fetch("http://holidayroad.nss.team/bizarreries")
-//             .then(response => 
-//                 response.json())
-            
-//     }
-// }
-
-const getAttractionLists = () => {
-    return fetch("http://holidayroad.nss.team/bizarreries").then(
-        (response) => {
-            return response.json()
-        }
-        ) .then((attractionArray) => { 
-            tempCollection = attractionArray 
-            console.log(tempCollection)})
+const convertParkObject = (parkObject) => {
+    const parkOptionHTML = `<option value=${parkObject.fullName}>${parkObject.name}</option>`
+    return parkOptionHTML
 }
+
+
+
+
+const makeAttractionComponent = (attraction) => {
+    // Create your own HTML structure for a journal entry
+    return `
+<option value = "${attraction.id}"> ${attraction.name}</option>
+    `
+}
+
+
+
+
+/* <h2>Bizarre Attraction:${attraction.name}</h2>
+<div>Location: ${attraction.city},${attraction.state}</div>
+
+<div>Description: ${attraction.description}</div>
+<div>Amenities?${attraction.amenities}</div>
+<div>Sells souvenirs?${attraction.souvenirs}</div>
+<div>Are there restrooms?${attraction.restrooms}</div> */

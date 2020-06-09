@@ -1,5 +1,5 @@
-const renderAttractionList = (attractions) => {
-    for (entry of attractions) {
+const renderAttractionList = () => {
+    for (entry of tempCollection) {
         const attractionHTML = makeAttractionComponent(entry)
         const attractionElement = document.querySelector(".attractionLog")
 

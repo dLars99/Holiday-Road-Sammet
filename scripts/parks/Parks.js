@@ -1,4 +1,5 @@
 const convertParkObject = (parkObject) => {
-        const parkOptionHTML = `<option value=${parkObject.fullName}>${parkObject.name}</option>`
+        console.log(parkObject.id)
+        const parkOptionHTML = `<option value="${parkObject.id}">${parkObject.name}</option>`
         return parkOptionHTML
 }

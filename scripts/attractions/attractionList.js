@@ -8,4 +8,4 @@ const renderAttractionList = (attractions) => {
 }
 
 // Invoke the render function
-renderAttractionList(attractions)
+//renderAttractionList(attractions)

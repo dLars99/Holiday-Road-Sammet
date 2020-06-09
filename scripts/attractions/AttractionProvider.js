@@ -15,7 +15,6 @@ const getAttractionList = () => {
         }
     ).then((attractionArray) => {
         tempCollection = attractionArray
-        console.log(tempCollection)
     }
     )
 }

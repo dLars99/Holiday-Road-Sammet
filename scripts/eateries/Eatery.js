@@ -1,8 +1,6 @@
 const eateryConverter = (eateryObject) => {
 
     const eateryHTMLRepresentation = 
-        `<selection>
-            <option>${eateryObject.businessName}</option>
-        </selection>`
+        `<option>${eateryObject.businessName}</option>`
     return eateryHTMLRepresentation
 }

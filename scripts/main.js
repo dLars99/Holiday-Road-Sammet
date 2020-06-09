@@ -1,2 +1,4 @@
 import apiKeys from "./Settings.js";
-getEateryData()
+getEateryData().then ( ()=> { 
+    eateryList()
+})

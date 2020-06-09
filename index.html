@@ -3,11 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Holiday Road</title>
 </head>
 <body>
-    
-    <!-- <script type="module" src="scripts/.Settings.js"></script> -->
+    <main class = "container">
+        <div class = "banner"></div>
+
+        <article id = "leftContainer">
+
+            <form id = "dropdown">
+                <!-- Can be done this way but may need to change it  -->
+                <select class = "dropdown__list parkList"></select>
+                <select class = "dropdown__list attractionList"></select>
+                <select class = "dropdown__list eateryList"></select>
+            </form>
+
+            <article class = "itineraryPreview">
+                <section class = "weatherList">       
+                    <!--Fills in Weather list-->
+                </section>
+
+                <section class="park">
+                    <!-- Fills in with Parks Name -->
+                    <button class = "park__button">Details Parks</button>
+                </section>
+
+                <section class = "attraction">
+                    <!-- Fills in with Bizzarrarie name -->
+                    <button>Detail Bizzarrarie</button>
+                </section>
+
+                <section class = "eatery">
+                    <!-- Fills in with Eateries name -->
+                    <button>Detail Eateries</button>
+                </section>
+
+                <button id = "dropdown">Save</button>
+            </article>
+
+        </article>
+        <aside class = "rightContainer">
+            <!-- The rest of the HTML will come through our data -->
+            <article class = "itineraryList"></article>
+        </aside>
+
+    <script type="module" src="scripts/attractions/AttractionProvider.js"></script>
+    <script type="module" src="scripts/directions/DirectionProvider.js"></script>
+    <script type="module" src="scripts/eateries/EateryProvider.js"></script>
+    <script type="module" src="scripts/parks/ParkProvider.js"></script>
+    <script type="module" src="scripts/weather/WeatherProvider.js"></script>
     <script type="module" src="scripts/main.js"></script>
+    </main>
 </body>
 </html>

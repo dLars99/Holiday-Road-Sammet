@@ -3,7 +3,7 @@
 const makeAttractionComponent = (attraction) => {
     // Create your own HTML structure for a journal entry
     return `
-<option value = "${attraction.id}"> ${attraction.name}</option>
+<option value="${attraction.id}"> ${attraction.name}</option>
     `
 }
 

@@ -6,7 +6,7 @@ let fiveDayForcast = {}
 const getWeatherData = (lat, lon) => {
   
 
-   const weatherURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=current,minutely,hourly&appid=${apiKeys.weatherKey}&units=imperial&unix=dataObject.toLocaleString()`
+   const weatherURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=current,minutely,hourly&appid=${apiKeys.weatherKey}&units=imperial`
     return fetch(weatherURL).then(
         httpResponse => {
             return httpResponse.json()

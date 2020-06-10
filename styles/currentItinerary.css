@@ -19,3 +19,18 @@
     text-justify: center;
     color: white;
 }
+
+.popup__button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.popup__button .popup__window{
+    visibility: hidden;
+    z-index: 1;
+}
+
+.popup .show {
+    visibility: visible;
+}
+

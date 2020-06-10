@@ -15,11 +15,12 @@ const clearFishList = () => fishArticleElement.innerHTML = ""
 parkDropdown.addEventListener("change", clickEvent => {
     // Get the value of the option chosen by the user
     const userChoice = clickEvent.target.value
-    // let objectIndex = parksDatabase.indexOf(parksDatabase[parksDatabase.findIndex(parkObject => parkObject.id === userChoice)])
-    // itineraryPark = parksDatabase[objectIndex]
     itineraryPark = parksDatabase.find(({id}) => id === userChoice);
-    console.log(itineraryPark)
 
+    // Faith's weather function. Uncomment and fill in with proper function name
+    // weatherFunction(itineraryPark.latitude, itineraryPark.longitude)
+
+    // Render selected park to the itinerary builder in the DOM
     const parkSelectionHTML = addParkToItinerary(itineraryPark)
     document.querySelector(".park").innerHTML = parkSelectionHTML
 })

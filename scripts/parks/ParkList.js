@@ -15,6 +15,7 @@ const parkDropdown = document.querySelector(".parkList")
 
 parkDropdown.addEventListener("change", clickEvent => {
     // Get the value of the option chosen by the user
+    document.querySelector(".weatherList").innerHTML = ""
     tripItinerary.park = clickEvent.target.value
     itineraryParkObject = parksDatabase.find(({id}) => id === tripItinerary.park);
 

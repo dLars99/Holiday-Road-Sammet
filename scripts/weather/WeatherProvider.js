@@ -15,7 +15,6 @@ const getWeatherData = (lat, lon) => {
 // this is running through the weather data
         (arrayOfWeather) => {
             fiveDayForcast = arrayOfWeather
-            console.log(fiveDayForcast)
         }
     )
 }

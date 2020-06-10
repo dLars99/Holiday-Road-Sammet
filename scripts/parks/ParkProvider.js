@@ -10,7 +10,7 @@ let parksDatabase = []
 
 const getParkData = () => {
     //REMOVE &stateCode=TN
-        const parksURL = `https://developer.nps.gov/api/v1/parks?&api_key=${apiKeys.npsKey}&stateCode=TN`
+        const parksURL = `https://developer.nps.gov/api/v1/parks?&api_key=${apiKeys.npsKey}`
         return fetch(parksURL)
             .then(response => response.json())
             .then(rawParkData => parksDatabase = rawParkData.data)

@@ -1,5 +1,4 @@
-let intineraryPark = {}
-
+// Generate dropdown list of all parks
 const generateParksList = (parks) => {
     for (const currentParksObject of parksDatabase) {
         const parkListEntry = convertParkObject(currentParksObject)
@@ -8,19 +7,21 @@ const generateParksList = (parks) => {
     }
 }
 
-const parkDropdown = document.querySelector(".parkList")
+// Object for current selection
+let intineraryParkObject = {}
 
-const clearFishList = () => fishArticleElement.innerHTML = ""
+// Take user-selected park and populate the itinerary builder
+const parkDropdown = document.querySelector(".parkList")
 
 parkDropdown.addEventListener("change", clickEvent => {
     // Get the value of the option chosen by the user
-    const userChoice = clickEvent.target.value
-    tripItinerary.park = parksDatabase.find(({id}) => id === userChoice);
+    tripItinerary.park = clickEvent.target.value
+    itineraryParkObject = parksDatabase.find(({id}) => id === tripItinerary.park);
 
     // Faith's weather function. Uncomment and fill in with proper function name
-    // weatherFunction(itineraryPark.latitude, itineraryPark.longitude)
+    // getWeatherData(itineraryParkObject.latitude, itineraryParkObject.longitude)
 
     // Render selected park to the itinerary builder in the DOM
-    const parkSelectionHTML = addParkToItinerary(tripItinerary.park)
+    const parkSelectionHTML = addParkToItinerary(itineraryParkObject)
     document.querySelector(".park").innerHTML = parkSelectionHTML
 })

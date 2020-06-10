@@ -12,11 +12,14 @@ const parkDropdown = document.querySelector(".parkList")
 
 const clearFishList = () => fishArticleElement.innerHTML = ""
 
-// parkDropdown.addEventListener("change", clickEvent => {
-//     // Get the value of the option chosen by the user
-//     const userChoice = clickEvent.target.value
-//     let objectIndex = parksDatabase.indexOf(parksDatabase[parksDatabase.findIndex(parkObject => parkObject.id === userChoice)])
+parkDropdown.addEventListener("change", clickEvent => {
+    // Get the value of the option chosen by the user
+    const userChoice = clickEvent.target.value
+    // let objectIndex = parksDatabase.indexOf(parksDatabase[parksDatabase.findIndex(parkObject => parkObject.id === userChoice)])
+    // itineraryPark = parksDatabase[objectIndex]
+    itineraryPark = parksDatabase.find(({id}) => id === userChoice);
+    console.log(itineraryPark)
 
-//     const parkSelection = addParkToItinerary(userChoice)
-//     document.querySelector(".park").innerHTML += parkSelection
-// }
+    const parkSelectionHTML = addParkToItinerary(itineraryPark)
+    document.querySelector(".park").innerHTML = parkSelectionHTML
+})

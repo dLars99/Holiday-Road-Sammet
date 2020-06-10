@@ -6,6 +6,14 @@ const renderAttractionList = () => {
         attractionElement.innerHTML += attractionHTML
     }
 }
+//temp
+let itineraryAttractionObject = {}
 
-// Invoke the render function
-//renderAttractionList(attractions)
+const attractionDropdown = document.querySelector("change", clickEvent => {
+    tripItinerary.attraction = clickEvent.target.value
+    itineraryAttractionObject = attractionDatabase.find(({id}) => id === tripItinerary.attraction)
+
+    const attractionSelectionHTML = addAttractionToItinerary(itineraryAttractionObject)
+    document.querySelector(".attraction").innerHTML = attractionSelectionHTML
+
+})

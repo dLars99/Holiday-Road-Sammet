@@ -1,3 +1,11 @@
+// Object for current itinerary to-be-built
+const tripItinerary = {
+    "park": "",
+    "attraction": "",
+    "eatery": ""
+    // "weather": weatherFunction()
+}
+
 let parksDatabase = []
 
 const getParkData = (parkKey) => {

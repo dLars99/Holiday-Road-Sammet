@@ -24,13 +24,27 @@
     position: relative;
     display: inline-block;
     cursor: pointer;
+    width: 100%;
+    text-align: right;
 }
+
 .popup__button .popup__window{
     visibility: hidden;
     z-index: 1;
+    width: auto;
+    background-color: #555;
+    color: #fff;
+    text-justify: center;
+    text-align: left;
+    border-radius: 6px;
+    padding: .5rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 10%;
 }
 
-.popup .show {
+.popup__button .show {
     visibility: visible;
 }
 

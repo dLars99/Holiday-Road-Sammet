@@ -1,0 +1,21 @@
+.park {
+    width: 100%;
+    max-height: 25%;
+    position: relative;
+    overflow: hidden;
+}
+
+.itineraryPark__Image {
+    position: absolute;
+    z-index: -1;
+    opacity: .8;
+    width: 100%;
+    bottom: 0;
+}
+
+.itineraryPark__Name {
+    font-size: 2rem;
+    font-weight: bold;
+    text-justify: center;
+    color: white;
+}

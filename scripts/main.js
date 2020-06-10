@@ -1,4 +1,4 @@
-import apiKeys from "./Settings.js";
+// import apiKeys from "./Settings.js";
 
 getAttractionList()
 .then(() => renderAttractionList())
@@ -7,5 +7,6 @@ getAttractionList()
 getEateryData().then ( ()=> { 
     eateryList()
 })
-getParkData(apiKeys.npsKey)
+
+getParkData()
     .then(parksData => generateParksList(parksData))

@@ -20,7 +20,7 @@ eaterySelection.addEventListener("change", (clickEvent) => {
     // Setting a variable to a clickEvent that target the value of the select value.
     eateryItinerary.eatery = clickEvent.target.value
     //
-    eateryObject = parksDatabase.find(({id}) => id === eateryItinerary.eatery)
+    eateryObject = eateryCollection.find(place => place.id.toString() === eateryItinerary.eatery)
     
     const selectHTMLEatery = eateryitineraryHTML(eateryObject)
     document.querySelector(".eatery").innerHTML = selectHTMLEatery

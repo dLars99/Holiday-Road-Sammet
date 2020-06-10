@@ -18,8 +18,8 @@ parkDropdown.addEventListener("change", clickEvent => {
     tripItinerary.park = clickEvent.target.value
     itineraryParkObject = parksDatabase.find(({id}) => id === tripItinerary.park);
 
-    // Faith's weather function. Uncomment and fill in with proper function name
-    // getWeatherData(itineraryParkObject.latitude, itineraryParkObject.longitude)
+    // Faith's weather function. Uncomment and fill in with proper function name 
+   getWeatherData(itineraryParkObject.latitude, itineraryParkObject.longitude).then(() => weatherList())
 
     // Render selected park to the itinerary builder in the DOM
     const parkSelectionHTML = addParkToItinerary(itineraryParkObject)

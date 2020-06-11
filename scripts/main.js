@@ -17,3 +17,5 @@ getEateryData().then ( ()=> {
 
 getParkData()
     .then(parksData => generateParksList(parksData))
+    .then(() => getItineraryData())
+    .then(itineraryArray => itineraryList(itineraryArray))

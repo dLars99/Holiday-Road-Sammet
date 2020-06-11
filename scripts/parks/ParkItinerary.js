@@ -1,7 +1,5 @@
 const addParkToItinerary = (selectedPark) => {
-    return `<img class="itineraryPark__Image" src="${selectedPark.images[0].url}" 
-    alt="${selectedPark.images[0].altText}">
-    <h3 class="itineraryPark__Name">${selectedPark.fullName}</h3>
+    return `<h3 class="itineraryPark__Name">${selectedPark.fullName}</h3>
     <div class="popup__button" onclick="parkDetails()"><button>Park Details</button>
         <span class="popup__window" id="parkDetails">
         <p>Address: ${selectedPark.addresses[1].line1}<br>
@@ -15,3 +13,7 @@ const addParkToItinerary = (selectedPark) => {
 
 
 // Directions: $ {selectedPark.directionsInfo}
+
+{/* < img class = "itineraryPark__Image"
+src = "${selectedPark.images[0].url}"
+alt = "${selectedPark.images[0].altText}" > */}

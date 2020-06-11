@@ -1,25 +1,26 @@
 @import url("currentItinerary.css");
 
 .banner{
-    display: flex;
     border: 1px solid black;
-    background-color: #5071A6;
+    background-color:#9BCB96;
     width: 100%;
     height: 100%;
-  
-    
 }
 .banner h1{
     display:flex;
     justify-content: center ;
-    color: #fff
-    
-}
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+ }
 .banner h2{
     display: flex;
     color: #fff;
     justify-content: flex-end;
- 
+    text-shadow: 2px 2px black;
+}
+body .background{
+    opacity: .20;
 }
 
 

@@ -25,4 +25,6 @@ eaterySelection.addEventListener("change", (clickEvent) => {
     const selectHTMLEatery = eateryitineraryHTML(eateryObject)
     document.querySelector(".eatery").innerHTML = selectHTMLEatery
     
+    // Check for full itinerary
+    checkItineraryFullness()
 })

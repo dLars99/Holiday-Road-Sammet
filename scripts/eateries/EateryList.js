@@ -25,21 +25,21 @@ eaterySelection.addEventListener("change", (clickEvent) => {
     const selectHTMLEatery = eateryitineraryHTML(eateryObject)
     document.querySelector(".eatery").innerHTML = selectHTMLEatery
 
-    // Building out the Modal with first 
+
+    /* Building out the Modal */ 
     const eateryModal = document.querySelector("#eateryModal");
     const eateryBtn = document.querySelector("#eateryBtn");
     const eaterySpan = document.getElementsByClassName("eateryClose")[0];
 
-    // When the user clicks on the button, open the modal
+    // Opens Modal
     eateryBtn.onclick = () => eateryModal.style.display = "block";
     
-
-    // When the user clicks on <span> (x), close the modal
+    // When clicking on the x it will close
     eaterySpan.onclick = () => eateryModal.style.display = "none";
 
-    // When the user clicks anywhere outside of the modal, close it
+    // When you click anywhere outside the modal it will close
     window.onclick = (event) => {
-        if (event.target == modal) {
+        if (event.target === eateryModal) {
             eateryModal.style.display = "none";
         }
     }

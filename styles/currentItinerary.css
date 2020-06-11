@@ -29,6 +29,20 @@
     color: white;
 }
 
+.itineraryAttraction__Name {
+    color:#083B66;
+    background-color: rgba(155,203,150,.65);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-justify: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px
+
+}
+
+
+
 .popup__button {
     position: relative;
     display: inline-block;
@@ -60,4 +74,3 @@
 .saveButton {
     
 }
-

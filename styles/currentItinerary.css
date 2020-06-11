@@ -13,7 +13,7 @@
 .itineraryImage {
     position: absolute;
     z-index: -1;
-    opacity: .8;
+    /* opacity: .8; */
     width: 100%;
     bottom: 0;
 }

@@ -1,16 +1,25 @@
-.park {
+.itineraryPreview {
     width: 100%;
-    max-height: 25%;
+    max-height: 75%;
     position: relative;
     overflow: hidden;
 }
 
-.itineraryPark__Image {
+.park {
+    width: 100%;
+    max-height: 25%;
+}
+
+.itineraryImage {
     position: absolute;
     z-index: -1;
     opacity: .8;
     width: 100%;
     bottom: 0;
+}
+
+.itineraryImage img {
+    width: 100%;
 }
 
 .itineraryPark__Name {

@@ -2,7 +2,7 @@
 const tripItinerary = {
     "park": "",
     "attraction": "",
-    "eatery": "3"
+    "eatery": ""
     // "weather": weatherFunction()
 }
 

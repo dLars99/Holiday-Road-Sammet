@@ -1,10 +1,3 @@
-// Object for current itinerary to-be-built
-const eateryItinerary = {
-    "park": "",
-    "attraction": "",
-    "eatery": ""
-}
-
 let eateryCollection = []
 
 const getEateryData = () => {

@@ -7,7 +7,7 @@ const eateryitineraryHTML = (eateryItineraryObject) => {
         <div id="eateryModal" class="eateryModal">
 
             <div class="eatery__information">
-                <span class="close">&times;</span>
+                <span class="eateryClose">&times;</span>
                 <p>${eateryItineraryObject.description}</p>
                 <div>Pet Friendly: ${eateryItineraryObject.ameneties.petFriendly ? "Yes" :"No"}</div>
             </div>

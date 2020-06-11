@@ -19,5 +19,3 @@ function dateConverter(UNIX_timestamp){
     var day = month + ' ' + date + ' ' +  year;
     return day;
 }
-    console.log(dateConverter(0)) 
-

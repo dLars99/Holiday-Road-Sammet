@@ -27,4 +27,6 @@ attractionDropdown.addEventListener("change", clickEvent => {
     const attractionSelectionHTML = addAttractionToItinerary(itineraryAttractionObject)
     document.querySelector(".attraction").innerHTML = attractionSelectionHTML
 
+    // Check for full itinerary
+    checkItineraryFullness()
 })

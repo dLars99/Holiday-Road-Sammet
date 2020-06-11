@@ -23,6 +23,18 @@ parkDropdown.addEventListener("change", clickEvent => {
     document.querySelector(".weatherList").innerHTML = ""
     getWeatherData(itineraryParkObject.latitude, itineraryParkObject.longitude).then(() => weatherList())
 
+    // Render selected park image to the background. If the object has no image, use a default
+    let imageURL = ""
+    if (itineraryParkObject.images[0]) {
+        imageURL = itineraryParkObject.images[0].url
+        altText = itineraryParkObject.images[0].altText
+    } else {
+        imageURL = "https://www.nps.gov/grte/planyourvisit/images/Ncascade_summer2018_bonney-1.JPG"
+        altText = "U.S. National Parks"
+    }
+
+    document.querySelector(".itineraryImage").innerHTML = `<img src="${imageURL}" alt="${altText}">`
+
     // Render selected park to the itinerary builder in the DOM
     const parkSelectionHTML = addParkToItinerary(itineraryParkObject)
     document.querySelector(".park").innerHTML = parkSelectionHTML

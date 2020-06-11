@@ -20,6 +20,21 @@
     color: white;
 }
 
+.itineraryAttraction__Name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-justify: center;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px
+
+}
+
+.itineraryAttraction__Name:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
 .popup__button {
     position: relative;
     display: inline-block;
@@ -51,4 +66,3 @@
 .saveButton {
     
 }
-

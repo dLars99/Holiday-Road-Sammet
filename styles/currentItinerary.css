@@ -30,8 +30,8 @@
 }
 
 .itineraryAttraction__Name {
-    color:#184B74;
-    background-color: #9BCB96;
+    color:#083B66;
+    background-color: rgba(155,203,150,.65);
     font-size: 1.5rem;
     font-weight: bold;
     text-justify: center;

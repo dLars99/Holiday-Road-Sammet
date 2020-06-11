@@ -2,10 +2,10 @@
 
 .banner{
     border: 1px solid black;
-    background-color:#9BCB96;
+    background: rgba(155,203,150,.5);
     width: 100%;
     height: 100%;
-    opacity: 0.9;
+    
    
 }
 

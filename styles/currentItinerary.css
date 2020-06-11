@@ -48,6 +48,7 @@
     visibility: visible;
 }
 
+<<<<<<< HEAD
 
 /* Test for model */
 
@@ -88,3 +89,9 @@
     text-decoration: none;
     cursor: pointer;
   }
+=======
+.saveButton {
+    
+}
+
+>>>>>>> master

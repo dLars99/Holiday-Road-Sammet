@@ -24,6 +24,7 @@ eaterySelection.addEventListener("change", (clickEvent) => {
 
     const selectHTMLEatery = eateryitineraryHTML(eateryObject)
     document.querySelector(".eatery").innerHTML = selectHTMLEatery
+<<<<<<< HEAD
 
     const modal = document.getElementById("myModal");
 
@@ -50,4 +51,9 @@ eaterySelection.addEventListener("change", (clickEvent) => {
         }
     }
 
+=======
+    
+    // Check for full itinerary
+    checkItineraryFullness()
+>>>>>>> master
 })

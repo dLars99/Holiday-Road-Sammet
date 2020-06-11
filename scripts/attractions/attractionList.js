@@ -23,9 +23,13 @@ attractionDropdown.addEventListener("change", clickEvent => {
     tripItinerary.attraction = clickEvent.target.value
 //Searches for the id and sets value to that object
     itineraryAttractionObject = tempCollection.find( place  => place.id.toString() === tripItinerary.attraction)
+    tripItinerary.attraction = parseInt(clickEvent.target.value)
 
+    itineraryAttractionObject = tempCollection.find( place  => place.id === tripItinerary.attraction)
 
     const attractionSelectionHTML = addAttractionToItinerary(itineraryAttractionObject)
     document.querySelector(".attraction").innerHTML = attractionSelectionHTML
 
+    // Check for full itinerary
+    checkItineraryFullness()
 })

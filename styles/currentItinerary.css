@@ -30,6 +30,8 @@
 }
 
 .itineraryAttraction__Name {
+    color:#184B74;
+    background-color: #9BCB96;
     font-size: 1.5rem;
     font-weight: bold;
     text-justify: center;
@@ -39,9 +41,7 @@
 
 }
 
-.itineraryAttraction__Name:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+
 
 .popup__button {
     position: relative;

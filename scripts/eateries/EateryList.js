@@ -9,7 +9,7 @@ const eateryList = () => {
 }
 
 // Object to be used to hold the current selection of the section options.
- let eateryObject = {}
+let eateryObject = {}
 
 // Create a document selector for our addVentListener.
 const eaterySelection = document.querySelector(".eateryList")
@@ -21,9 +21,29 @@ eaterySelection.addEventListener("change", (clickEvent) => {
     tripItinerary.eatery = parseInt(clickEvent.target.value)
     // Using find to find the id. Found out that the id 
     eateryObject = eateryCollection.find(eatery => eatery.id === tripItinerary.eatery)
-    
+
     const selectHTMLEatery = eateryitineraryHTML(eateryObject)
     document.querySelector(".eatery").innerHTML = selectHTMLEatery
+
+
+    /* Building out the Modal */ 
+    const eateryModal = document.querySelector("#eateryModal");
+    const eateryBtn = document.querySelector("#eateryBtn");
+    const eaterySpan = document.getElementsByClassName("eateryClose")[0];
+
+    // Opens Modal
+    eateryBtn.onclick = () => eateryModal.style.display = "block";
+    
+    // When clicking on the x it will close
+    eaterySpan.onclick = () => eateryModal.style.display = "none";
+
+    // When you click anywhere outside the modal it will close
+    window.onclick = (event) => {
+        if (event.target === eateryModal) {
+            eateryModal.style.display = "none";
+        }
+    }
+
     
     // Check for full itinerary
     checkItineraryFullness()

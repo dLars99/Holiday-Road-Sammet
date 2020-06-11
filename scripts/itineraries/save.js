@@ -8,23 +8,10 @@ const checkItineraryFullness = () => {
 
 
 const saveCurrentItinerary = () => {
-    // console.log(tripItinerary)
+    // Convert object to JSON
     itineraryJSON = JSON.stringify(tripItinerary)
-    // console.log(itineraryJSON)
-    // // 1. Create a new XMLHttpRequest object
-    // let xhr = new XMLHttpRequest()
 
-    // // 2. Configure it: GET-request for the URL /article/.../load
-    // xhr.open('POST', 'http://localhost:8088/itineraries', true)
-    // xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8')
-
-    // // 3. Send the request over the network
-    // xhr.send(itineraryJSON)
-    //     .then(() => refreshPage())
-
-    // Reload the page
-    // location.reload()
-
+    // Post itinerary to database
     fetch("http://localhost:8088/itineraries", {
         method: "POST",
         headers: {
@@ -37,7 +24,3 @@ const saveCurrentItinerary = () => {
     })
 
 }
-
-// const refreshPage = () => {
-//     location.reload()
-// }

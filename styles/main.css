@@ -1,1 +1,39 @@
 @import url("currentItinerary.css");
+
+.banner{
+    border: 1px solid black;
+    background-color:#9BCB96;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+   
+}
+
+.banner h2{
+    display: flex;
+    color: #fff;
+    justify-content: flex-end;
+    text-shadow: 2px 2px black;
+    padding: 20px;
+    opacity: 1.0;
+}
+.banner img{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{    
+    content: "";
+    background: url(https://image.freepik.com/free-vector/evening-fog-tops-trees-pine-forest_1284-27059.jpg);
+    background-size: cover;
+    background-color: #5071A6;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+

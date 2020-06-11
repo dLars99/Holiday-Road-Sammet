@@ -1,16 +1,17 @@
 const eateryitineraryHTML = (eateryItineraryObject) => {
-    return `<div>${eateryItineraryObject.businessName}</div>
+    return `
+        <div>${eateryItineraryObject.businessName}</div>
     
-<button id="myBtn">Open Modal</button>
+        <button id="eateryBtn">Eatery Detail</button>
 
+        <div id="eateryModal" class="eateryModal">
 
-<div id="myModal" class="modal">
+            <div class="eatery__information">
+                <span class="close">&times;</span>
+                <p>${eateryItineraryObject.description}</p>
+                <div>Pet Friendly: ${eateryItineraryObject.ameneties.petFriendly ? "Yes" :"No"}</div>
+            </div>
 
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
-  </div>
-
-</div>
+        </div>
         `
 }

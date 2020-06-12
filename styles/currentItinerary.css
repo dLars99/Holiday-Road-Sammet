@@ -28,7 +28,7 @@
     color: white;
 }
 
-.itineraryAttraction__Name {
+.itineraryActivity__Name {
     color:#083B66;
     background-color: rgba(155,203,150,.65);
     font-size: 1.5rem;
@@ -70,9 +70,6 @@
     visibility: visible;
 }
 
-.saveButton {
-    
-}
 
 /* The Modal (background) */
 .eateryModal {

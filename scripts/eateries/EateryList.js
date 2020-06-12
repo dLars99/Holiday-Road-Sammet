@@ -1,6 +1,9 @@
 const eateryList = () => {
-
+    /* Creates a select option at the top of the options. This is a placeholder that will be used
+         instead of using a restourant. */
+         document.querySelector(".eateryList").innerHTML = `<option disabled selected value>Select a Eatery</option`
     for (const eateryObject of eateryCollection) {
+     
         const eateryHTMLRepresentation = eateryConverter(eateryObject)
 
         const eaterySelectionElement = document.querySelector(".eateryList")

@@ -1,3 +1,12 @@
+Holiday Road
+Holiday Road is a website to help users pick a vacation spot. They can choose what park to visit, where to eat and see what fun activities there are around them. They can also see the 5 day forcast for each place.
+David, worked on the parks dropdown, detail btn, and save btn. Erik worked on activties dropdown and detail btn. Nick worked on the eatery dropdown and detail btn. Faith worked on the weather and css for main page. David awesome team leader.
+
+Usage
+import api for parks and weather data. Requires a running json server for saving itineraries.
+
+contributors 
+Erik Lindstrom, Nick Glover, David Larsen, Faith Magras 
 # Holiday Road from Nashville
 
 You and your teammates have been contracted by the National Parks Service to build an application that will allow people to build itineraries for their trips to the beautiful national parks that they maintain. The starting point of each trip will be Nashville, TN, but the destination will a national park selected by the user.

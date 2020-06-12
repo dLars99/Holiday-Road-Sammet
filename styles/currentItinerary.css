@@ -148,3 +148,9 @@
     cursor: pointer;
 
   }
+
+  .saveButton {
+      margin: 5rem;
+      padding: .3rem;
+      font-size: 1.1rem;
+  }

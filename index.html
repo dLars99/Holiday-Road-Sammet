@@ -8,15 +8,14 @@
     <title>Holiday Road</title>
 </head>
 <body>
-    
-    <main class = "container">
-        <div class = "banner">
-           <image src="./styles/img/parkLogo.png"></image>
-            <h2>Plan your next trip!</h2>
-        </div>
-      
+    <header class="banner">
+        <image src="./styles/img/parkLogo.png"></image>
+        <h2>Plan your next trip!</h2>
+    </header>
 
-        <article id = "leftContainer">
+    <main class = "container">
+
+        <article class = "leftContainer">
 
             <form id = "dropdown">
                 <!-- Can be done this way but may need to change it  -->
@@ -52,7 +51,9 @@
         </article>
         <aside class = "rightContainer">
             <!-- The rest of the HTML will come through our data -->
-            <article class = "itineraryList"></article>
+            <article class = "itineraryList">
+                <h3 class="itineraryTitle">Saved Itineraries</h3>
+            </article>
         </aside>
     <script src="scripts/attractions/attractionDetails.js"></script>
     <script src="scripts/attractions/AttractionProvider.js"></script>
@@ -73,6 +74,9 @@
     <script src="scripts/parks/ParkItinerary.js"></script>
     <script src="scripts/parks/ParkDetails.js"></script>
     <script src="scripts/itineraries/save.js"></script>
+    <script src="scripts/itineraries/ItineraryProvider.js"></script>
+    <script src="scripts/itineraries/ItineraryList.js"></script>
+    <script src="scripts/itineraries/Itinerary.js"></script>
     <script src="scripts/Settings.js"></script>
     <script src="scripts/main.js"></script>
     </main>

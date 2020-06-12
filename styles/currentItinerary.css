@@ -36,7 +36,10 @@
     text-justify: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px
+    border-radius: 5px;
+    padding-left: .5em;
+    padding-top: .25em;
+    padding-bottom:.25em;
 
 }
 
@@ -48,6 +51,7 @@
     cursor: pointer;
     width: 100%;
     text-align: right;
+
 }
 
 .popup__button .popup__window{
@@ -108,4 +112,3 @@
     text-decoration: none;
     cursor: pointer;
   }
-

@@ -19,6 +19,5 @@ getParkData()
     .then(parksData => generateParksList(parksData))
     .then(() => getItineraryData())
     .then(itineraryArray => {
-        console.log(itineraryArray)
         itineraryList(itineraryArray)
     })

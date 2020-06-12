@@ -42,7 +42,7 @@ parkDropdown.addEventListener("change", clickEvent => {
     /* Building out the Modal */
     const parkModal = document.querySelector("#parkModal");
     const parkBtn = document.querySelector("#parkBtn");
-    const parkSpan = document.getElementsByClassName("eateryClose")[0];
+    const parkSpan = document.getElementsByClassName("parkClose")[0];
 
     // Opens Modal
     parkBtn.onclick = () => parkModal.style.display = "block";

@@ -112,3 +112,33 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+  /* The Close Button */
+  .attractionClose {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .attractionClose:hover,
+  .attractionClose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+    /* The Close Button */
+  .parkClose {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .parkClose:hover,
+  .parkClose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+
+  }

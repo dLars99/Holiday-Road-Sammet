@@ -42,7 +42,7 @@ var attractionModal = document.getElementById("attractionModal");
 var attractionBtn = document.getElementById("attractionBtn");
 
 // Get the <span> element that closes the modal
-var attractionSpan = document.getElementsByClassName("eateryClose")[0];
+var attractionSpan = document.getElementsByClassName("attractionClose")[0];
 
 // When the user clicks the button, open the modal 
 attractionBtn.onclick = () => attractionModal.style.display = "block";

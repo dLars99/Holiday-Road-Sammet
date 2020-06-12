@@ -11,7 +11,7 @@ const itineraryConverter = (currentItinerary) => {
     
     const itineraryObjectHTML = `<section class="itinerary">
     <p class="itineraryHeader">Park:</p>
-    <p class="itineraryStop">${currentItineraryPark.fullName}</p>
+    <p class="itineraryStop">${currentItineraryPark.name}</p>
     <p class="itineraryHeader">Bizarrerie:</p>
     <p class="itineraryStop">${currentItineraryAttraction.name}</p>
     <p class="itineraryHeader">Eatery:</p>

@@ -38,7 +38,24 @@ parkDropdown.addEventListener("change", clickEvent => {
     // Render selected park to the itinerary builder in the DOM
     const parkSelectionHTML = addParkToItinerary(itineraryParkObject)
     document.querySelector(".park").innerHTML = parkSelectionHTML
+   
+    /* Building out the Modal */
+    const parkModal = document.querySelector("#parkModal");
+    const parkBtn = document.querySelector("#parkBtn");
+    const parkSpan = document.getElementsByClassName("eateryClose")[0];
 
+    // Opens Modal
+    parkBtn.onclick = () => parkModal.style.display = "block";
+
+    // When clicking on the x it will close
+    parkSpan.onclick = () => parkModal.style.display = "none";
+
+    // When you click anywhere outside the modal it will close
+    window.onclick = (event) => {
+        if (event.target === parkModal) {
+            parkModal.style.display = "none";
+        }
+    }
     // Check for full itinerary
     checkItineraryFullness()
 })

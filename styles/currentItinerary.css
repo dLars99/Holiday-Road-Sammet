@@ -1,3 +1,9 @@
+.instructions {
+    font-size: 1.5rem;
+    color: white;
+    margin: 4rem 4rem;
+}
+
 .itineraryPreview {
     width: 100%;
     position: relative;
@@ -141,4 +147,10 @@
     text-decoration: none;
     cursor: pointer;
 
+  }
+
+  .saveButton {
+      margin: 5rem;
+      padding: .3rem;
+      font-size: 1.1rem;
   }

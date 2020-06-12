@@ -1,7 +1,7 @@
 // Pull selected attributes from databases and convert to HTML
 
 const itineraryConverter = (currentItinerary) => {
-
+    console.log(currentItinerary)
     // Pull data via IDs in saved object
     currentItineraryPark = parksDatabase.find(({ id }) => id === currentItinerary.park)
     currentItineraryAttraction = tempCollection.find(({ id }) => id === currentItinerary.attraction)

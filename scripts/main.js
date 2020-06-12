@@ -8,7 +8,7 @@ const tripItinerary = {
 }
 
 getAttractionList()
-.then(() => renderAttractionList())
+    .then(() => renderAttractionList())
 
 
 getEateryData().then ( ()=> { 
@@ -18,4 +18,7 @@ getEateryData().then ( ()=> {
 getParkData()
     .then(parksData => generateParksList(parksData))
     .then(() => getItineraryData())
-    .then(itineraryArray => itineraryList(itineraryArray))
+    .then(itineraryArray => {
+        console.log(itineraryArray)
+        itineraryList(itineraryArray)
+    })

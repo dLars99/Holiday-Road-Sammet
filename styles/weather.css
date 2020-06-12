@@ -8,4 +8,17 @@
     background-color: #5071A6;
     font-family: cursive;
 }
+.weather{
+    display: flex;
+    flex-direction: row;
+    
+}
+.weatherIcon{
+   display: flex;
+   justify-content: center;
+   height: 100%;
+}
+/* .weatherIcon img{
+    height: 60%;
+} */
 

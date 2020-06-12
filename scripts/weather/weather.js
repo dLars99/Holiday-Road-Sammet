@@ -1,13 +1,13 @@
 // listing the temp min and max and desciption from the weather.daliy forcast
 const weatherConverter = (weatherList) => {
   
-    const weatherHTMLRespresentation = `<section class="weatherList">
-    ${dateConverter(weatherList.dt)}<br>
+    const weatherHTMLRespresentation = `<section class="weather">
+    <div>${dateConverter(weatherList.dt)}<br>
     ${weatherList.weather.timezone}<br>
     ${Math.round(weatherList.temp.min)} low <br>
     ${Math.round(weatherList.temp.max)} high <br>
-    ${weatherList.weather[0].description}<br>
-    ${weatherList.weather.icon}
+    ${weatherList.weather[0].description}</div>
+   <div class="weatherIcon" ><img src="http://openweathermap.org/img/wn/${weatherList.weather[0].icon}.png"></div>
  
     </section>`
     return weatherHTMLRespresentation

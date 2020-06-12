@@ -6,8 +6,6 @@
     background: rgba(155,203,150,.5);
     width: 100%;
     height: 300px;
-    
-   
 }
 
 .banner h2{
@@ -17,6 +15,7 @@
     text-shadow: 2px 2px black;
     padding: 20px;
     opacity: 1.0;
+    font-family: cursive;
 }
 .banner img{
     display: flex;

@@ -1,24 +1,31 @@
+/* this keep things in a row and spaces thing and adds color and font */
 .weatherList {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    border: 1px solid black;
     color: #fff;
     background-color: #5071A6;
     font-family: cursive;
 }
+/* this put weather in data in column and added a border */
+/* the padding and text-align help postion the text and img */
 .weather{
-    display: flex;
-    flex-direction: row;
+        display: flex;
+        flex-direction: column;
+        padding-right: 11px;
+        padding-left: 20px;
+        padding-top: 10px;
+        text-align: center;
+        border: 1px solid black;
+    }
     
 }
+/* this centers the icon and the margin pushing it down and to the left more */
 .weatherIcon{
-   display: flex;
-   justify-content: center;
-   height: 75%;
+    display: block;
+    text-align: center;
+    height: 100%;
 }
-/* .weatherIcon img{
-    height: 60%;
-} */
+
 

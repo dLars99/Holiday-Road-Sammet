@@ -36,13 +36,13 @@ attractionDropdown.addEventListener("change", clickEvent => {
 
 
 // Get the modal
-var attractionModal = document.getElementById("attractionModal");
+const attractionModal = document.getElementById("attractionModal");
 
 // Get the button that opens the modal
-var attractionBtn = document.getElementById("attractionBtn");
+const attractionBtn = document.getElementById("attractionBtn");
 
 // Get the <span> element that closes the modal
-var attractionSpan = document.getElementsByClassName("attractionClose")[0];
+const attractionSpan = document.getElementsByClassName("attractionClose")[0];
 
 // When the user clicks the button, open the modal 
 attractionBtn.onclick = () => attractionModal.style.display = "block";
@@ -52,7 +52,7 @@ attractionSpan.onclick = () => attractionModal.style.display = "none";
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == attractionModal) {
+  if (event.target === attractionModal) {
     attractionModal.style.display = "none";
   }
 }

@@ -1,6 +1,6 @@
 Holiday Road
 Holiday Road is a website to help users pick a vacation spot. They can choose what park to visit, where to eat and see what fun activities there are around them. They can also see the 5 day forcast for each place.
-David, worked on the parks dropdown, detail btn, and save btn. Erik worked on activties dropdown and detail btn. Nick worked on the eatery dropdown and detail btn. Faith worked on the weather and css for main page. David awesome team leader.
+David, worked on the parks dropdown, detail btn, and save btn. Erik worked on activties dropdown and detail btn. Nick worked on the eatery dropdown and detail btn. Faith worked on the weather and css for main page. David is a awesome team leader.
 
 Usage
 import api for parks and weather data. Requires a running json server for saving itineraries.

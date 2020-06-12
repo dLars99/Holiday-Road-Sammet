@@ -22,9 +22,9 @@ const attractionDropdown = document.querySelector(".attractionLog")
 attractionDropdown.addEventListener("change", clickEvent => {
 
 //Sets global tripItinerary to value of the click target
-    tripItinerary.attraction = clickEvent.target.value
+    tripItinerary.attraction = parseInt(clickEvent.target.value)
 //Searches for the id and sets value to that object
-    itineraryAttractionObject = tempCollection.find( place  => place.id.toString() === tripItinerary.attraction)
+    itineraryAttractionObject = tempCollection.find( place  => place.id === tripItinerary.attraction)
     itineraryAttractionObject.ameneties.souvenirs = (itineraryAttractionObject.ameneties.souvenirs ? 'Yes' : 'No');
     itineraryAttractionObject.ameneties.restrooms = (itineraryAttractionObject.ameneties.restrooms ? 'Yes' : 'No');
     const attractionSelectionHTML = addAttractionToItinerary(itineraryAttractionObject)

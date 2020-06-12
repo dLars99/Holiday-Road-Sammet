@@ -13,7 +13,3 @@ const addParkToItinerary = (selectedPark) => {
 
 
 // Directions: $ {selectedPark.directionsInfo}
-
-{/* < img class = "itineraryPark__Image"
-src = "${selectedPark.images[0].url}"
-alt = "${selectedPark.images[0].altText}" > */}

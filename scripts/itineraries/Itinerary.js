@@ -16,3 +16,4 @@ const itineraryConverter = (currentItinerary) => {
     </section>`
     return itineraryObjectHTML
 }
+

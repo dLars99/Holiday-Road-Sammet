@@ -1,8 +1,8 @@
 const eateryitineraryHTML = (eateryItineraryObject) => {
     return `
-        <div>${eateryItineraryObject.businessName}</div>
-    
-        <button id="eateryBtn">Eatery Detail</button>
+        <div class="itineraryActivity__Name">${eateryItineraryObject.businessName}</div>
+    <br>
+        <div class ="popup__button"><button id="eateryBtn">Eatery Detail</button></div>
 
         <div id="eateryModal" class="eateryModal">
 

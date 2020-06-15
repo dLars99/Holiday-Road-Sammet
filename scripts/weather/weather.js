@@ -3,7 +3,6 @@ const weatherConverter = (weatherList) => {
   
     const weatherHTMLRespresentation = `<section class="weather">
     <div>${dateConverter(weatherList.dt)}<br>
-   
     ${Math.round(weatherList.temp.min)} low <br>
     ${Math.round(weatherList.temp.max)} high <br>
     ${weatherList.weather[0].description}</div>
